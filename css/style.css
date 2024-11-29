@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@100..900&display=swap');
+
+:root {
+    --cor-primaria: #222831;
+    --cor-secundaria: #EEEEEE;
+    --cor-terciaria: #00ADB5;
+    --cor-hover: #393E46;
+
+    --cor-html: #FF4E1D;
+    --cor-css: #0074BE;
+    --cor-javascript: #F7DF1E;
+    --cor-react: #60DAFA;
+
+    --cor-github: #523f97;
+    --cor-linkedin: #0A66C2;
+
+    --fonte-primaria: "Krona One", sans-serif;
+    --fonte-secundaria: "Montserrat", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    color: var(--cor-secundaria);
+    background-color: var(--cor-primaria);
+}
+
+main {
+    flex: 1;
+}
+
+/* index.html */
+
+.cabecalho {
+    padding: 2% 0 0 10%;
+}
+
+.cabecalho_menu {
+    display: flex;
+    gap: 50px;
+}
+
+.cabecalho_menu_link {
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+    transition: 0.3s;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.cabecalho_menu_link:hover {
+    color: var(--cor-secundaria);
+    background-color: var(--cor-hover);
+}
+
+.navbar_icon {
+    display: flex;
+    gap: 10px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+}
+
+#github_icon {
+    color: var(--cor-github);
+}
+
+#linkedin_icon {
+    color: var(--cor-linkedin);
+}
+
+.conteudo {
+    padding: 5% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.conteudo_informacao {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.conteudo_titulo {
+    font-size: 2.25rem;
+    font-family: var(--fonte-primaria);
+}
+
+.titulo_destaque {
+    color: var(--cor-terciaria);
+}
+
+.conteudo_texto {
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+}
+
+.texto_destaque_html {
+    color: var(--cor-html);
+}
+
+.texto_destaque_css {
+    color: var(--cor-css);
+}
+
+.texto_destaque_javascript {
+    color: var(--cor-javascript);
+}
+
+.texto_destaque_react {
+    color: var(--cor-react);
+}
+
+.conteudo_links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.conteudo_links_titulo {
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.conteudo_links_navegacao {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 50%;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    padding: 20px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    border: 2px solid var(--cor-terciaria);
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.conteudo_links_navegacao:hover {
+    background-color: var(--cor-hover);
+    transform: scale(1.1);
+}
+
+.icone_botao {
+    color: var(--cor-terciaria);
+}
+
+.conteudo_imagem {
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 173, 181, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 173, 181, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 173, 181, 0.75);
+}
+
+/* skills.html */
+
+.conteudo_informacao_skill {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.conteudo_imagem_skills {
+    width: 50%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* projects.html */
+
+.conteudo_projeto {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.conteudo_imagem_projeto {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px 0 0 20px;
+}
+
+.conteudo_projeto_informacao {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--fonte-secundaria);
+    background-color: var(--cor-terciaria);
+    padding: 15% 5%;
+    border-radius: 0 20px 20px 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.conteudo_projeto_titulo {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.conteudo_projeto_botao {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    gap: 20px;
+}
+
+.conteudo_projeto_botao_link {
+    border-radius: 10px;
+    color: var(--cor-secundaria);
+    background-color: var(--cor-primaria);
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.conteudo_projeto_botao_link:hover {
+    transform: scale(1.1);
+}
+
+.conteudo_projeto_icone {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    background-color: var(--cor-primaria);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#conteudo_projeto_icone_html {
+    color: var(--cor-html);
+}
+
+#conteudo_projeto_icone_css {
+    color: var(--cor-css);
+}
+
+#conteudo_projeto_icone_javascript {
+    color: var(--cor-javascript);
+}
+
+.rodape {
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria);
+    padding: 20px;
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+}
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .cabecalho_menu {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .conteudo {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .conteudo_informacao {
+        width: auto;
+    }
+
+    .conteudo_informacao_skill {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conteudo_projeto {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .conteudo_imagem_projeto {
+        border-radius: 20px 20px 0 0;
+    }
+
+    .conteudo_projeto_informacao {
+        border-radius: 0 0 20px 20px;
+    }
+
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+    height: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--cor-secundaria);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--cor-primaria);
+    border-radius: 6px;
+    border: 3px solid var(--cor-secundaria);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--cor-hover);
+}
